@@ -1,0 +1,19 @@
+---
+import '../styles/global.css';
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title || 'AXMEDIA — Premium Brand Experience & Messebau'}</title>
+    <meta name="description" content={description || 'AXMEDIA plant, baut und betreut Messeauftritte, die Leads generieren und Marken nachhaltig positionieren.'} />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
