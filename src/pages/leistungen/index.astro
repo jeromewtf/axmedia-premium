@@ -1,0 +1,70 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout 
+  title="Leistungen — AXMEDIA | Messebau & Brand Experience"
+  description="Individuelle Messeauftritte, interaktive Erlebnisse, Eventproduktion und Brand Spaces. Alles aus einer Hand."
+>
+
+<nav class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur z-50 border-b border-[#e5e5e5]">
+  <div class="max-w-7xl mx-auto px-8 flex justify-between items-center h-20">
+    <a href="/" class="font-semibold tracking-tight text-xl">AXMEDIA</a>
+    <div class="flex gap-10 text-sm font-medium">
+      <a href="/leistungen" class="text-[#111]">Leistungen</a>
+      <a href="/projekte" class="hover:text-[#666]">Projekte</a>
+      <a href="#kontakt" class="hover:text-[#666]">Kontakt</a>
+    </div>
+    <a href="#kontakt" class="btn-primary text-sm px-6 py-3">Gespräch vereinbaren</a>
+  </div>
+</nav>
+
+<section class="pt-20 section max-w-5xl mx-auto px-8">
+  <div class="max-w-3xl">
+    <div class="text-[#666] text-sm tracking-[3px] mb-4">WAS WIR TUN</div>
+    <h1 class="text-7xl font-semibold tracking-[-3px] leading-none mb-8">Leistungen, die<br>Ihren Messeerfolg<br>messbar steigern.</h1>
+    <p class="text-xl text-[#555]">Von der ersten Idee bis zum letzten Lead – alles aus einer Hand.</p>
+  </div>
+</section>
+
+<section class="max-w-7xl mx-auto px-8 pb-24">
+  <div class="grid md:grid-cols-2 gap-px bg-[#e5e5e5]">
+    <a href="/leistungen/messebau" class="bg-white p-12 block hover:bg-[#fafafa] transition-colors">
+      <div class="text-xs tracking-[3px] text-[#666] mb-6">01</div>
+      <h3 class="text-4xl font-semibold tracking-[-1px] mb-6">Messebau &amp; Standkonzepte</h3>
+      <p class="text-[#555] mb-8">Individuelle, markengerechte Messearchitektur – modular, wiederverwendbar, nachhaltig.</p>
+      <span class="text-sm font-medium">Mehr erfahren →</span>
+    </a>
+    
+    <a href="/leistungen/interaktiv" class="bg-white p-12 block hover:bg-[#fafafa] transition-colors">
+      <div class="text-xs tracking-[3px] text-[#666] mb-6">02</div>
+      <h3 class="text-4xl font-semibold tracking-[-1px] mb-6">Interaktive Erlebnisse</h3>
+      <p class="text-[#555] mb-8">Aktivierungen, die Besucher einbinden und qualifizierte Gespräche erzwingen.</p>
+      <span class="text-sm font-medium">Mehr erfahren →</span>
+    </a>
+    
+    <a href="/leistungen/eventproduktion" class="bg-white p-12 block hover:bg-[#fafafa] transition-colors">
+      <div class="text-xs tracking-[3px] text-[#666] mb-6">03</div>
+      <h3 class="text-4xl font-semibold tracking-[-1px] mb-6">Eventproduktion</h3>
+      <p class="text-[#555] mb-8">Komplette Eventrealisierung – Technik, Content, Personal und Ablauf aus einer Hand.</p>
+      <span class="text-sm font-medium">Mehr erfahren →</span>
+    </a>
+    
+    <a href="/leistungen/brand-spaces" class="bg-white p-12 block hover:bg-[#fafafa] transition-colors">
+      <div class="text-xs tracking-[3px] text-[#666] mb-6">04</div>
+      <h3 class="text-4xl font-semibold tracking-[-1px] mb-6">Brand Spaces &amp; Pop-ups</h3>
+      <p class="text-[#555] mb-8">Temporäre und permanente Markenräume mit hoher Aufenthaltsqualität.</p>
+      <span class="text-sm font-medium">Mehr erfahren →</span>
+    </a>
+  </div>
+</section>
+
+<section id="kontakt" class="section bg-[#111] text-white">
+  <div class="max-w-3xl mx-auto px-8 text-center">
+    <h2 class="text-5xl font-semibold tracking-[-2px] mb-6">Welche Leistung passt zu Ihrem Ziel?</h2>
+    <p class="text-white/70 mb-10">Vereinbaren Sie ein kostenloses Strategiegespräch. Wir finden gemeinsam die beste Lösung.</p>
+    <a href="#kontakt" class="btn-primary">Kostenloses Gespräch vereinbaren</a>
+  </div>
+</section>
+
+</BaseLayout>

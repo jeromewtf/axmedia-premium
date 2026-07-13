@@ -3,64 +3,75 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout 
-  title="AXMEDIA — Beste Brand Experience & Messebau Agentur"
-  description="Wir bauen Messeauftritte, die Aufmerksamkeit erzwingen und qualifizierte Leads generieren. Premium Brand Exhibition für anspruchsvolle Marken."
+  title="AXMEDIA — Premium Brand Experience & Messebau | Messeauftritte mit messbaren Leads"
+  description="Wir bauen Messeauftritte, die Aufmerksamkeit erzwingen und qualifizierte Leads generieren. Über 100 Projekte für Marken wie Condor, Promarin und LEVL UP."
 >
 
 <!-- NAV -->
 <nav class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur z-50 border-b border-[#e5e5e5]">
   <div class="max-w-7xl mx-auto px-8 flex justify-between items-center h-20">
     <div class="font-semibold tracking-tight text-xl">AXMEDIA</div>
-    <div class="flex gap-10 text-sm font-medium">
+    <div class="hidden md:flex gap-10 text-sm font-medium">
       <a href="#leistungen" class="hover:text-[#666]">Leistungen</a>
       <a href="#projekte" class="hover:text-[#666]">Projekte</a>
       <a href="#prozess" class="hover:text-[#666]">Prozess</a>
       <a href="#kontakt" class="hover:text-[#666]">Kontakt</a>
     </div>
-    <a href="#kontakt" class="btn-primary text-sm px-6 py-3">Gespräch vereinbaren</a>
+    <a href="#kontakt" class="btn-primary text-sm px-6 py-3">Kostenloses Gespräch</a>
   </div>
 </nav>
 
 <!-- HERO -->
 <section class="pt-20 min-h-[100dvh] flex items-center border-b border-[#e5e5e5]">
   <div class="max-w-5xl mx-auto px-8 pt-16 pb-24">
-    <div class="max-w-3xl">
+    <div class="max-w-4xl">
       <div class="inline-block px-4 py-1 rounded-full bg-[#f5f5f5] text-xs tracking-[3px] font-medium mb-8">BRAND EXHIBITION • MESSEBAU • EXPERIENTIAL</div>
       
       <h1 class="text-7xl md:text-[92px] leading-[0.92] font-semibold tracking-[-4.5px] mb-8">
         Messeauftritte,<br>die messbar<br>Leads bringen.
       </h1>
       
-      <p class="max-w-md text-xl text-[#666] mb-12">
+      <p class="max-w-lg text-2xl text-[#555] mb-12">
         Wir planen, bauen und betreuen Premium-Messeauftritte für Marken, 
-        die Aufmerksamkeit und qualifizierte Kontakte wollen.
+        die echte Aufmerksamkeit und qualifizierte Kontakte wollen.
       </p>
       
       <div class="flex flex-wrap gap-4">
         <a href="#kontakt" class="btn-primary">Kostenloses Strategiegespräch</a>
-        <a href="#projekte" class="btn-secondary">Projekte ansehen</a>
+        <a href="#projekte" class="btn-secondary">Projekte mit Ergebnissen</a>
       </div>
+      <div class="mt-4 text-xs text-[#888]">30 Minuten • Kostenlos • Keine Verkaufspräsentation</div>
     </div>
   </div>
 </section>
 
 <!-- PROBLEM / SOLUTION -->
 <section class="section max-w-5xl mx-auto px-8">
-  <div class="grid md:grid-cols-2 gap-x-16 gap-y-12">
-    <div>
+  <div class="grid md:grid-cols-12 gap-x-16">
+    <div class="md:col-span-5">
       <div class="text-[#666] text-sm tracking-[2px] mb-4">DAS PROBLEM</div>
-      <h2 class="text-5xl font-semibold tracking-[-1.5px] leading-none">Die meisten Stände<br>sehen gut aus.<br>Und bleiben wirkungslos.</h2>
+      <h2 class="text-5xl font-semibold tracking-[-1.5px] leading-none">Die meisten Stände sehen gut aus.<br>Und bleiben wirkungslos.</h2>
     </div>
-    <div class="pt-4 text-[17px] text-[#444] space-y-6">
+    <div class="md:col-span-7 md:pt-4 text-[17px] text-[#444] space-y-6">
       <p>Besucher laufen vorbei. Nehmen einen Flyer. Lächeln höflich. Gehen weiter.</p>
       <p>Kein echtes Gespräch. Kein qualifizierter Lead. Kein Return on Investment.</p>
-      <p class="font-medium text-[#111]">Wir bauen Messeauftritte, die Aufmerksamkeit erzwingen und Gespräche starten.</p>
+      <p class="font-medium text-[#111] text-xl">Wir bauen Messeauftritte, die Aufmerksamkeit erzwingen und Gespräche starten – mit messbaren Ergebnissen.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<section class="py-12 border-y border-[#e5e5e5]">
+  <div class="max-w-6xl mx-auto px-8 text-center">
+    <div class="text-[#666] text-xs tracking-[3px] mb-8">VERTRAUEN UNS SEIT JAHREN</div>
+    <div class="flex flex-wrap justify-center gap-x-16 gap-y-6 text-2xl font-medium tracking-tight text-[#333]">
+      <div>Condor</div><div>Promarin</div><div>LEVL UP</div><div>Goette Gruppe</div><div>LMX</div>
     </div>
   </div>
 </section>
 
 <!-- LEISTUNGEN -->
-<section id="leistungen" class="section bg-[#fafafa] border-y border-[#e5e5e5]">
+<section id="leistungen" class="section bg-[#fafafa] border-b border-[#e5e5e5]">
   <div class="max-w-7xl mx-auto px-8">
     <div class="mb-16">
       <div class="text-[#666] text-sm tracking-[2px] mb-3">WAS WIR TUN</div>
@@ -68,153 +79,133 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </div>
     
     <div class="grid md:grid-cols-2 gap-px bg-[#e5e5e5]">
-      <div class="bg-white p-12">
+      <a href="/leistungen/messebau" class="bg-white p-12 block hover:bg-[#f8f8f8]">
         <div class="text-xs tracking-[3px] text-[#666] mb-6">01</div>
         <h3 class="text-4xl font-semibold tracking-[-1px] mb-6">Messebau &amp; Standkonzepte</h3>
-        <p class="text-[#555] mb-8">Individuelle, markengerechte Messearchitektur – von der Idee bis zur Realisierung. Modular, wiederverwendbar, nachhaltig.</p>
-        <a href="#kontakt" class="text-sm font-medium flex items-center gap-2">Mehr erfahren →</a>
-      </div>
-      <div class="bg-white p-12">
+        <p class="text-[#555] mb-8">Individuelle, markengerechte Messearchitektur – modular, wiederverwendbar, nachhaltig. Mehr Leads durch bessere Besucherführung.</p>
+        <span class="text-sm font-medium">Mehr erfahren →</span>
+      </a>
+      <a href="/leistungen/interaktiv" class="bg-white p-12 block hover:bg-[#f8f8f8]">
         <div class="text-xs tracking-[3px] text-[#666] mb-6">02</div>
         <h3 class="text-4xl font-semibold tracking-[-1px] mb-6">Interaktive Erlebnisse</h3>
-        <p class="text-[#555] mb-8">Aktivierungen, die Besucher einbinden. Von Touchpoints über VR bis zu physischen Interaktionen, die Gespräche erzwingen.</p>
-        <a href="#kontakt" class="text-sm font-medium flex items-center gap-2">Mehr erfahren →</a>
-      </div>
-      <div class="bg-white p-12">
+        <p class="text-[#555] mb-8">Aktivierungen, die Besucher einbinden. Von Touchpoints über VR bis zu physischen Interaktionen – 3–5x mehr Verweildauer.</p>
+        <span class="text-sm font-medium">Mehr erfahren →</span>
+      </a>
+      <a href="/leistungen/eventproduktion" class="bg-white p-12 block hover:bg-[#f8f8f8]">
         <div class="text-xs tracking-[3px] text-[#666] mb-6">03</div>
         <h3 class="text-4xl font-semibold tracking-[-1px] mb-6">Eventproduktion</h3>
-        <p class="text-[#555] mb-8">Komplette Eventrealisierung – Technik, Content, Personal und Ablauf. Alles aus einer Hand, termingenau und vor Ort betreut.</p>
-        <a href="#kontakt" class="text-sm font-medium flex items-center gap-2">Mehr erfahren →</a>
-      </div>
-      <div class="bg-white p-12">
+        <p class="text-[#555] mb-8">Komplette Eventrealisierung – Technik, Content, Personal und Ablauf aus einer Hand. Termingenau und vor Ort betreut.</p>
+        <span class="text-sm font-medium">Mehr erfahren →</span>
+      </a>
+      <a href="/leistungen/brand-spaces" class="bg-white p-12 block hover:bg-[#f8f8f8]">
         <div class="text-xs tracking-[3px] text-[#666] mb-6">04</div>
         <h3 class="text-4xl font-semibold tracking-[-1px] mb-6">Brand Spaces &amp; Pop-ups</h3>
         <p class="text-[#555] mb-8">Temporäre und permanente Markenräume. Showrooms, Experience Stores und Pop-up-Konzepte mit hoher Aufenthaltsqualität.</p>
-        <a href="#kontakt" class="text-sm font-medium flex items-center gap-2">Mehr erfahren →</a>
-      </div>
+        <span class="text-sm font-medium">Mehr erfahren →</span>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- PROJEKTE / CASE STUDIES -->
+<!-- PROJEKTE -->
 <section id="projekte" class="section max-w-7xl mx-auto px-8">
   <div class="flex justify-between items-end mb-12">
     <div>
       <div class="text-[#666] text-sm tracking-[2px] mb-3">AUSGEWÄHLTE PROJEKTE</div>
       <h2 class="text-6xl font-semibold tracking-[-2px]">Ergebnisse, die<br>überzeugen.</h2>
     </div>
-    <a href="#kontakt" class="btn-secondary hidden md:flex">Alle Projekte</a>
+    <a href="/projekte" class="btn-secondary hidden md:flex">Alle Projekte</a>
   </div>
 
   <div class="space-y-px bg-[#e5e5e5]">
-    <!-- Case 1 -->
-    <div class="bg-white p-12 grid md:grid-cols-12 gap-x-12 items-center">
-      <div class="md:col-span-5">
-        <div class="text-sm text-[#666] mb-1">PROMARIN • 2026</div>
-        <h3 class="text-4xl font-semibold tracking-[-1px]">Gorinchem – Neuer Premium-Stand</h3>
+    <a href="/projekte/promarin-gorinchem-2026" class="block bg-white p-12 hover:bg-[#fafafa]">
+      <div class="grid md:grid-cols-12 gap-x-12 items-center">
+        <div class="md:col-span-5">
+          <div class="text-sm text-[#666]">PROMARIN • 2026</div>
+          <div class="text-3xl font-semibold tracking-[-0.5px] mt-1">Gorinchem – Neuer Premium-Stand</div>
+        </div>
+        <div class="md:col-span-4 mt-4 md:mt-0 text-[#555]">Herausforderung: Hoher Wettbewerb. Ziel: Mehr qualifizierte Gespräche.</div>
+        <div class="md:col-span-3 mt-6 md:mt-0">
+          <div class="text-4xl font-semibold tabular-nums">+87%</div>
+          <div class="text-sm text-[#666]">mehr Leads gegenüber Vorjahr</div>
+        </div>
       </div>
-      <div class="md:col-span-4 mt-6 md:mt-0 text-[#555]">
-        Herausforderung: Hoher Wettbewerb auf der wichtigsten Branchenmesse. Ziel: Mehr qualifizierte Gespräche.
-      </div>
-      <div class="md:col-span-3 mt-8 md:mt-0">
-        <div class="text-4xl font-semibold tabular-nums">+87%</div>
-        <div class="text-sm text-[#666]">mehr Leads gegenüber Vorjahr</div>
-        <a href="#kontakt" class="inline-block mt-6 text-sm font-medium">Case Study lesen →</a>
-      </div>
-    </div>
+    </a>
 
-    <!-- Case 2 -->
-    <div class="bg-white p-12 grid md:grid-cols-12 gap-x-12 items-center">
-      <div class="md:col-span-5">
-        <div class="text-sm text-[#666] mb-1">CONDOR • 2025</div>
-        <h3 class="text-4xl font-semibold tracking-[-1px]">TTG Rimini – Interaktiver Flugsimulator</h3>
+    <a href="/projekte/condor-rimini-2025" class="block bg-white p-12 hover:bg-[#fafafa]">
+      <div class="grid md:grid-cols-12 gap-x-12 items-center">
+        <div class="md:col-span-5">
+          <div class="text-sm text-[#666]">CONDOR • 2025</div>
+          <div class="text-3xl font-semibold tracking-[-0.5px] mt-1">TTG Rimini – Interaktiver Flugsimulator</div>
+        </div>
+        <div class="md:col-span-4 mt-4 md:mt-0 text-[#555]">VR-gestützte Flugsimulation als zentrales Erlebnis.</div>
+        <div class="md:col-span-3 mt-6 md:mt-0">
+          <div class="text-4xl font-semibold tabular-nums">2.400+</div>
+          <div class="text-sm text-[#666]">qualifizierte Leads in 4 Tagen</div>
+        </div>
       </div>
-      <div class="md:col-span-4 mt-6 md:mt-0 text-[#555]">
-        VR-gestützte Flugsimulation als zentrales Erlebnis. Über 2.400 qualifizierte Kontakte in 4 Tagen.
-      </div>
-      <div class="md:col-span-3 mt-8 md:mt-0">
-        <div class="text-4xl font-semibold tabular-nums">2.400+</div>
-        <div class="text-sm text-[#666]">qualifizierte Leads</div>
-        <a href="#kontakt" class="inline-block mt-6 text-sm font-medium">Case Study lesen →</a>
-      </div>
-    </div>
+    </a>
 
-    <!-- Case 3 -->
-    <div class="bg-white p-12 grid md:grid-cols-12 gap-x-12 items-center">
-      <div class="md:col-span-5">
-        <div class="text-sm text-[#666] mb-1">LEVL UP • 2018–2025</div>
-        <h3 class="text-4xl font-semibold tracking-[-1px]">Gamescom – Konsistenter Markenauftritt</h3>
+    <a href="/projekte/levlup-gamescom" class="block bg-white p-12 hover:bg-[#fafafa]">
+      <div class="grid md:grid-cols-12 gap-x-12 items-center">
+        <div class="md:col-span-5">
+          <div class="text-sm text-[#666]">LEVL UP • 2018–2025</div>
+          <div class="text-3xl font-semibold tracking-[-0.5px] mt-1">Gamescom – Konsistenter Markenauftritt</div>
+        </div>
+        <div class="md:col-span-4 mt-4 md:mt-0 text-[#555]">Wiedererkennbarer, modularer Stand über mehrere Jahre.</div>
+        <div class="md:col-span-3 mt-6 md:mt-0">
+          <div class="text-4xl font-semibold tabular-nums">7</div>
+          <div class="text-sm text-[#666]">Jahre erfolgreicher Auftritte</div>
+        </div>
       </div>
-      <div class="md:col-span-4 mt-6 md:mt-0 text-[#555]">
-        Wiedererkennbarer, modularer Stand über mehrere Jahre. Deutliche Steigerung der Markenwahrnehmung.
-      </div>
-      <div class="md:col-span-3 mt-8 md:mt-0">
-        <div class="text-4xl font-semibold tabular-nums">7</div>
-        <div class="text-sm text-[#666]">Jahre erfolgreicher Auftritte</div>
-        <a href="#kontakt" class="inline-block mt-6 text-sm font-medium">Case Study lesen →</a>
-      </div>
-    </div>
+    </a>
   </div>
 </section>
 
 <!-- PROZESS -->
 <section id="prozess" class="section bg-[#111] text-white">
   <div class="max-w-5xl mx-auto px-8">
-    <div class="mb-20">
+    <div class="mb-16">
       <div class="text-white/60 text-sm tracking-[2px] mb-4">SO ARBEITEN WIR</div>
-      <h2 class="text-6xl font-semibold tracking-[-2px] max-w-2xl">Von der ersten Idee bis zum letzten Lead.</h2>
+      <h2 class="text-6xl font-semibold tracking-[-2px] max-w-3xl">Von der ersten Idee bis zum letzten Lead.</h2>
     </div>
 
-    <div class="space-y-16">
+    <div class="space-y-14">
       <div class="grid md:grid-cols-12 gap-x-8">
         <div class="md:col-span-2 text-white/50 text-sm tracking-widest">01</div>
         <div class="md:col-span-10">
-          <div class="text-2xl font-semibold mb-3">Erstgespräch</div>
+          <div class="text-2xl font-semibold mb-2">Erstgespräch</div>
           <p class="max-w-prose text-white/75">30 Minuten. Kostenlos. Wir hören zu, bevor wir anfangen. Ziele, Zielgruppe, Budget und Timeline – alles wird geklärt.</p>
         </div>
       </div>
       <div class="grid md:grid-cols-12 gap-x-8">
         <div class="md:col-span-2 text-white/50 text-sm tracking-widest">02</div>
         <div class="md:col-span-10">
-          <div class="text-2xl font-semibold mb-3">Konzept &amp; Design</div>
+          <div class="text-2xl font-semibold mb-2">Konzept &amp; Design</div>
           <p class="max-w-prose text-white/75">Maßgeschneidertes Konzept mit Moodboard, Raumplanung, Technologie und Kostenrahmen. Keine Baukastenlösung.</p>
         </div>
       </div>
       <div class="grid md:grid-cols-12 gap-x-8">
         <div class="md:col-span-2 text-white/50 text-sm tracking-widest">03</div>
         <div class="md:col-span-10">
-          <div class="text-2xl font-semibold mb-3">Produktion</div>
+          <div class="text-2xl font-semibold mb-2">Produktion</div>
           <p class="max-w-prose text-white/75">Alles aus einer Hand: Design, Technik, Content, Hardware. Regelmäßige Updates und Qualitätssicherung.</p>
         </div>
       </div>
       <div class="grid md:grid-cols-12 gap-x-8">
         <div class="md:col-span-2 text-white/50 text-sm tracking-widest">04</div>
         <div class="md:col-span-10">
-          <div class="text-2xl font-semibold mb-3">Live-Betrieb</div>
+          <div class="text-2xl font-semibold mb-2">Live-Betrieb</div>
           <p class="max-w-prose text-white/75">Unser Team ist vor Ort. Technik-Support, Moderation und Dokumentation während des gesamten Events.</p>
         </div>
       </div>
       <div class="grid md:grid-cols-12 gap-x-8">
         <div class="md:col-span-2 text-white/50 text-sm tracking-widest">05</div>
         <div class="md:col-span-10">
-          <div class="text-2xl font-semibold mb-3">Nachbereitung</div>
+          <div class="text-2xl font-semibold mb-2">Nachbereitung</div>
           <p class="max-w-prose text-white/75">Fotos, Videos, Analytics-Report und ehrliches Strategie-Review. Was hat funktioniert? Was optimieren wir?</p>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- TRUST BAR -->
-<section class="py-12 border-b border-[#e5e5e5]">
-  <div class="max-w-6xl mx-auto px-8 text-center">
-    <div class="text-[#666] text-xs tracking-[3px] mb-8">VERTRAUEN UNS SEIT JAHREN</div>
-    <div class="flex flex-wrap justify-center gap-x-16 gap-y-6 text-xl font-medium tracking-tight text-[#333]">
-      <div>Condor</div>
-      <div>Promarin</div>
-      <div>LEVL UP</div>
-      <div>Goette Gruppe</div>
-      <div>LMX</div>
     </div>
   </div>
 </section>
@@ -240,11 +231,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   <div class="max-w-3xl mx-auto px-8 text-center">
     <div class="text-[#666] text-sm tracking-[2px] mb-4">NÄCHSTER SCHRITT</div>
     <h2 class="text-6xl font-semibold tracking-[-2.5px] mb-6">Bereit für Ihren<br>erfolgreichsten Messeauftritt?</h2>
-    <p class="text-xl text-[#555] mb-12 max-w-md mx-auto">Vereinbaren Sie ein kostenloses 30-Minuten-Strategiegespräch oder laden Sie unsere Messe-Checkliste herunter.</p>
+    <p class="text-xl text-[#555] mb-12 max-w-md mx-auto">Vereinbaren Sie ein kostenloses 30-Minuten-Strategiegespräch oder laden Sie unseren Guide herunter.</p>
 
     <div class="flex flex-col sm:flex-row gap-4 justify-center mb-16">
       <a href="#kontakt" class="btn-primary">Kostenloses Gespräch vereinbaren</a>
-      <a href="#kontakt" class="btn-secondary">Messe-Checkliste 2026 herunterladen</a>
+      <a href="/ressourcen/10-messetipps" class="btn-secondary">10 Messetipps als PDF</a>
     </div>
 
     <div class="max-w-md mx-auto text-left">

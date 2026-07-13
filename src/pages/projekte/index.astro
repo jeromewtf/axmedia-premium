@@ -1,0 +1,43 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Projekte — AXMEDIA" description="Ausgewählte Messeauftritte mit messbaren Ergebnissen.">
+
+<nav class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur z-50 border-b border-[#e5e5e5]">
+  <div class="max-w-7xl mx-auto px-8 flex justify-between items-center h-20">
+    <a href="/" class="font-semibold tracking-tight text-xl">AXMEDIA</a>
+    <div class="flex gap-10 text-sm font-medium">
+      <a href="/leistungen" class="hover:text-[#666]">Leistungen</a>
+      <a href="/projekte" class="text-[#111]">Projekte</a>
+    </div>
+    <a href="#kontakt" class="btn-primary text-sm px-6 py-3">Gespräch vereinbaren</a>
+  </div>
+</nav>
+
+<section class="pt-20 section max-w-5xl mx-auto px-8">
+  <h1 class="text-7xl font-semibold tracking-[-3px] mb-8">Ergebnisse,<br>die überzeugen.</h1>
+  <p class="text-xl text-[#555]">Jedes Projekt wird mit klaren Zielen und messbaren Ergebnissen umgesetzt.</p>
+</section>
+
+<section class="max-w-5xl mx-auto px-8 pb-24 space-y-px bg-[#e5e5e5]">
+  <a href="/projekte/promarin-gorinchem-2026" class="block bg-white p-12 hover:bg-[#fafafa]">
+    <div class="text-sm text-[#666]">PROMARIN • 2026</div>
+    <div class="text-4xl font-semibold tracking-[-1px] mt-2">Gorinchem – Neuer Premium-Stand</div>
+    <div class="mt-4 text-[#555]">+87% mehr Leads gegenüber Vorjahr</div>
+  </a>
+  
+  <a href="/projekte/condor-rimini-2025" class="block bg-white p-12 hover:bg-[#fafafa]">
+    <div class="text-sm text-[#666]">CONDOR • 2025</div>
+    <div class="text-4xl font-semibold tracking-[-1px] mt-2">TTG Rimini – Interaktiver Flugsimulator</div>
+    <div class="mt-4 text-[#555]">2.400+ qualifizierte Leads in 4 Tagen</div>
+  </a>
+  
+  <a href="/projekte/levlup-gamescom" class="block bg-white p-12 hover:bg-[#fafafa]">
+    <div class="text-sm text-[#666]">LEVL UP • 2018–2025</div>
+    <div class="text-4xl font-semibold tracking-[-1px] mt-2">Gamescom – Konsistenter Markenauftritt</div>
+    <div class="mt-4 text-[#555]">7 Jahre erfolgreicher, wiedererkennbarer Auftritte</div>
+  </a>
+</section>
+
+</BaseLayout>
